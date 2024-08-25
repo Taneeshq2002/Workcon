@@ -1,0 +1,13 @@
+<%-include("partials/header");-%>
+<h1 style="margin-top: 4rem">YOUR APPOINTMENTS</h1>
+<div class="appointments">
+  <% for(booking of bookings) {%>
+  <p class="kdam-thmor-pro-regular" style="font-size: 2rem">
+    Date: <%=booking.bookdate%> <br />Timing: <%=booking.starttime%> to
+    <%=booking.endtime%> <br />
+    Address:<%=booking.address%>
+  </p>
+  <%}%>
+</div>
+
+<%-include("partials/footer"); -%>

@@ -1,0 +1,39 @@
+<%- include("partials/header"); -%>
+<p class="protest-revolution-regular">PROFILE</p>
+<% for(worker of workerdetails){%>
+<div class="prof">
+  <p class="protest-revolution-regular" style="font-size: 4rem">
+    Name:<%=worker.name%>
+  </p>
+  <p class="protest-revolution-regular" style="font-size: 4rem">
+    Occupation:<%=worker.occupation%>
+  </p>
+  <p class="protest-revolution-regular" style="font-size: 4rem">
+    Contact Number:<%=worker.contact%>
+  </p>
+  <p class="protest-revolution-regular" style="font-size: 4rem">Status:</p>
+  <% for(booking of bookings) {%>
+   
+  <p class="kdam-thmor-pro-regular" style="font-size: 2rem">
+    Worker is booked on<br>Date: <%=booking.bookdate%> <br>Timing: <%=booking.starttime%> to <%=booking.endtime%>
+  </p>
+  <br>
+  <%}%> 
+  <hr>
+ 
+  
+  <p class="protest-revolution-regular" style="font-size: 4rem">
+    Feedbacks:<br>
+    <% for(feedback of feedbacks){%>
+    <ul style="list-style-type: disc;">
+      <li class="protest-revolution-regular" style="font-size: 2rem"><%=feedback.content%></li>
+    </ul>
+    <%}%>
+  </p>
+  <% for(worker of workerdetails){%>
+  <form action="/profile" method="post">
+  <button class="btn btn-lg btn-dark" value="<%=worker.workerid%>" name="bookbtn">Book this Worker</button>
+</form>
+<%}%>
+</div>
+<%}%> <%- include("partials/footer"); -%>

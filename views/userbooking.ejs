@@ -1,0 +1,36 @@
+<%-include("partials/header");-%>
+<h1 style="margin-top: 4rem">YOUR APPOINTMENTS</h1>
+<div class="appointments">
+  <% for(booking of bookings) {%>
+  <p class="kdam-thmor-pro-regular" style="font-size: 2rem">
+    Date: <%=booking.bookdate%> <br />Timing: <%=booking.starttime%> to
+    <%=booking.endtime%> <br />Address:<%=booking.address%>
+  </p>
+  <div class="userbookingarea">
+    <form action="/userbooking" method="post">
+      <button
+        class="btn btn-lg btn-success"
+        name="deletebtn"
+        value="<%=booking.bookingid%>"
+      >
+        Completed
+      </button>
+      <button
+        class="btn btn-lg btn-warning"
+        name="modifybtn"
+        value="<%=booking.bookingid%>"
+      >
+        Edit Booking
+      </button>
+      <button
+        class="btn btn-lg btn-dark"
+        name="feedbackbtn"
+        value="<%=booking.workerid%>"
+      >
+        Give Feedback
+      </button>
+  </div>
+  <%}%>
+</div>
+
+<%-include("partials/footer"); -%>

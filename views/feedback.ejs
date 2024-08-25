@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+
+<div class="feedback">
+  <h1>FEEDBACK</h1>
+  <div class="inputarea">
+    <form action="/feedback" method="post">
+      <input type="text" name="wid" value="<%=id%>" />
+      <textarea
+        name="content"
+        id=""
+        cols="50"
+        rows="10"
+        placeholder="Enter the feedback here."
+      ></textarea>
+      <button class="btn btn-lg btn-dark">SUBMIT</button>
+    </form>
+  </div>
+  <h3><%=message%></h3>
+</div>
+
+<%- include("partials/footer"); -%>

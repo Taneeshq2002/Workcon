@@ -1,0 +1,35 @@
+<%- include("partials/header"); -%>
+
+<form action="/list" method="post">
+  <div class="searchbar">
+    <input type="text" name="searchval" placeholder="Search by occupation" />
+    <button class="btn btn-md btn-primary">SEARCH</button>
+  </div>
+</form>
+
+<div class="list-sec">
+  <%for(const worker of workers){%>
+  <div class="items">
+    <div class="card border-dark" style="width: 18rem">
+      <img class="card-img-top" src="..." alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">ID:<%=worker.workerid%></h5>
+        <p class="card-text">Occupation:<%=worker.occupation%></p>
+        <form action="/list" method="post">
+          <button
+            href="#"
+            class="btn btn-primary"
+            name="cardbtn"
+            value="<%=worker.workerid%>"
+            type="submit"
+          >
+            See profile
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <%}%>
+</div>
+
+<%- include("partials/footer"); -%>

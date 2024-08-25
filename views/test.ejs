@@ -1,0 +1,19 @@
+<%- include("partials/header")-%>
+
+<p id="para"></p>
+<button
+  class="btn btn-lg"
+  name="testbtn"
+  id="clickbutton"
+  onclick="handleClick('<%=alertmsg%>');"
+>
+  click
+</button>
+
+<script>
+  function handleClick(message) {
+    alert(message);
+  }
+</script>
+
+<%-include("partials/footer")-%>

@@ -1,0 +1,62 @@
+<%- include("partials/header2"); -%>
+
+<div class="loginbox">
+  <h2>SIGNUP</h2>
+  <div class="inputarea">
+    <form action="/wregister" method="post">
+      <input
+        type="text"
+        name="userid"
+        placeholder="Enter your userid"
+        autofocus
+        required
+      />
+      <input
+        type="text"
+        name="password"
+        placeholder="Enter your password"
+        autofocus
+        required
+      />
+      <input
+        type="text"
+        name="wid"
+        placeholder="Create worker id Eg:101"
+        required
+      />
+      <input
+        type="text"
+        name="Name"
+        placeholder="Enter your name"
+        autofocus
+        required
+      />
+      <input
+        type="text"
+        name="contact"
+        placeholder="Enter your phone number"
+        autofocus
+        maxlength="10"
+        required
+      />
+      <input
+        type="text"
+        name="job"
+        placeholder="Worker or User"
+        value="worker"
+        autofocus
+        readonly
+        required
+      />
+      <input type="text" name="occ" placeholder="Occupation" required />
+
+      <button class="btn btn-lg btn-primary btn-block">REGISTER</button>
+    </form>
+  </div>
+  <h3 style="margin-top: 4rem"><%=message%></h3>
+  <h4>
+    <a href="/login" style="text-decoration: none">Already have an account?</a>
+  </h4>
+</div>
+
+<%-include("partials/footer"); -%>

@@ -1,0 +1,226 @@
+/*fonts */
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-size: 10rem;
+}
+.kdam-thmor-pro-regular {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+/*general*/
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 12, 12);
+}
+hr {
+  width: 100%;
+  position: relative;
+  top: 7rem;
+  padding-top: 0.3rem;
+  background-color: black;
+}
+
+.hrappointment {
+  width: 100%;
+  padding-top: 0.3rem;
+  background-color: black;
+}
+footer {
+  height: 10rem;
+  width: 100%;
+  background-color: rgb(44, 42, 42);
+  margin-top: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(44, 42, 42);
+  margin-top: 0;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.navbar ul li {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.navbar ul a:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: bolder;
+}
+.navbar li:nth-child(1) {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* home page */
+/*heading title */
+.heading {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.heading p:nth-child(2) {
+  font-size: 4rem;
+}
+
+.about-section {
+  margin-top: 10rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-section p:nth-child(1) {
+  text-decoration: underline;
+}
+.about-section p:nth-child(2) {
+  font-size: 2rem;
+}
+
+.features-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.card {
+  border-radius: 80px;
+  border-width: 3px;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition-timing-function: 1s;
+  box-shadow: 0px 0px 10px black;
+}
+
+.choicearea {
+  display: flex;
+  align-items: center;
+  justify-content: Center;
+  gap: 15rem;
+  margin-top: 10rem;
+}
+.choicearea button {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 20rem;
+  font-size: 5rem;
+}
+/* list page */
+.searchbar {
+  margin-top: 7rem;
+  display: flex;
+  gap: 2rem;
+}
+.searchbar input {
+  height: 4rem;
+  width: 30rem;
+  border-radius: 80px;
+  padding: 1rem;
+}
+.searchbar button {
+  width: 7rem;
+  height: 3.6rem;
+}
+.list-sec {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}
+
+.loginbox {
+  width: 40%;
+  margin-top: 10rem;
+  border-radius: 6rem;
+  padding: 5rem;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputarea {
+  /* height: 20rem; */
+  margin-top: 3rem;
+}
+.inputarea form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.inputarea input {
+  height: 5rem;
+  width: 200%;
+}
+
+/*feedback page*/
+.feedback {
+  width: 40%;
+  margin-top: 10rem;
+  border-radius: 6rem;
+  padding: 5rem;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback input:nth-child(1) {
+  width: 100%;
+}
+
+/*worker profile*/
+.appointments {
+  margin-top: 1rem;
+}
+.appointments p {
+  box-shadow: 0px 0px 10px black;
+  margin-top: 4rem;
+}
+
+/*user booking forms*/
+.userbookingarea form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}

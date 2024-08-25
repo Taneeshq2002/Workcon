@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+
+<div class="feedback">
+  <h1>BOOKING DETAILS</h1>
+  <div class="inputarea">
+    <form action="/booking" method="post">
+      <input type="hidden" name="wid" value="<%=id%>" />
+      <input type="hidden" name="uid" value="<%=user.rows[0].userid%>" />
+      <input type="date" name="bookdate" />
+      <input type="time" name="bookstarttime" />
+      <input type="time" name="bookendtime" />
+      <input type="text" name="address" placeholder="Address" />
+      <button class="btn btn-lg btn-dark">SUBMIT</button>
+    </form>
+  </div>
+  <h3><%=message%></h3>
+</div>
+
+<%- include("partials/footer"); -%>

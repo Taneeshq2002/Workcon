@@ -1,0 +1,60 @@
+<%- include("partials/header"); -%>
+<div class="loginbox">
+  <h2>PROFILE</h2>
+  <div class="inputarea">
+    <form action="/editprof" method="post">
+      <input
+        type="text"
+        name="userid"
+        placeholder="Enter your username"
+        autofocus
+        value="<%=user.rows[0].userid%>"
+        readonly
+      />
+      <input
+        type="text"
+        name="password"
+        placeholder="Enter your password"
+        autofocus
+        value="<%=user.rows[0].password%>"
+      />
+      <input
+        type="text"
+        name="Name"
+        placeholder="Enter your name"
+        value="<%=user.rows[0].name%>"
+        autofocus
+      />
+      <input
+        type="text"
+        name="contact"
+        placeholder="Enter your phone number"
+        autofocus
+        value="<%=user.rows[0].contact%>"
+      />
+      <input
+        type="text"
+        name="job"
+        placeholder="Worker or User"
+        value="<%=user.rows[0].post%>"
+        autofocus
+      />
+
+      <button
+        class="btn btn-lg btn-primary btn-block"
+        value="user.rows[0].userid"
+        name="editbtn"
+      >
+        EDIT
+      </button>
+      <button
+        class="btn btn-lg btn-dark btn-block"
+        value="<%=user.rows[0].userid%>"
+        name="bookingbtn"
+      >
+        BOOKINGS
+      </button>
+    </form>
+  </div>
+</div>
+<%-include("partials/footer"); -%>
